@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashutosh Kumar - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #007bff, #ffcc00);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        header p {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        section {
+            padding: 3rem 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #007bff;
+            position: relative;
+        }
+        section h2::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #007bff;
+            display: block;
+            margin: 0.5rem auto 0;
+        }
+        .projects, .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project, .skill {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project:hover, .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .project h3, .skill h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .project p, .skill p {
+            font-size: 1rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1.5rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Aashutosh Kumar</h1>
+        <p>AI/ML Developer | Web Developer | Data Scientist</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p style="text-align: center; max-width: 800px; margin: auto;">Hi! I am Aashutosh Kumar, a passionate AI/ML developer, web developer, and data scientist. I enjoy creating innovative solutions, collaborating on challenging projects, and sharing knowledge through workshops and study materials.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Music Recommendation System</h3>
+                <p>Developing a personalized music recommendation system using machine learning.</p>
+            </div>
+            <div class="project">
+                <h3>Deepfake Detection</h3>
+                <p>Worked on detecting deepfake videos using the Celeb-DF v2 dataset.</p>
+            </div>
+            <div class="project">
+                <h3>Medical Report Summarizer</h3>
+                <p>Built during the Technova Hackathon to summarize medical reports using AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Python, JavaScript, HTML, CSS</p>
+            </div>
+            <div class="skill">
+                <h3>Tools & Frameworks</h3>
+                <p>TensorFlow, PyTorch, Mediapipe</p>
+            </div>
+            <div class="skill">
+                <h3>Other Skills</h3>
+                <p>Teamwork, Leadership, Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p style="text-align: center;">Feel free to reach out to me for collaborations or opportunities.</p>
+        <p style="text-align: center;">Email: <a href="mailto:aashutosh@gmail.com">aashutosh@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aashutosh Kumar. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
